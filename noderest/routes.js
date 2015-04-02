@@ -4,6 +4,6 @@ module.exports = function(app){
 	app.get('/truckers/:id', truckers.findById);
 	app.get('/import', truckers.import);
 	app.post('/truckers', truckers.add);
-	app.put('/truckers/:id', truckers.update);
+	app.post('/truckers/:id', truckers.update);
 	app.delete('/truckers/:id', truckers.delete);
 }
