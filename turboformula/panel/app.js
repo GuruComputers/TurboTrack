@@ -22,6 +22,6 @@ app.get('/', function(req, res) {
 	});
 });
 
-app.use('/profile', require('./profile')());
+app.use('/profile',require('./profile')());
 
 app.listen(3000);
