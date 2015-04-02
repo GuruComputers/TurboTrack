@@ -1,9 +1,10 @@
+var mongoose = require('mongoose'),
+Trucker = mongoose.model('Trucker');
+
 exports.findAll = function(req, res) {
-	res.send([{
-		"id": 1,
-		"name": "Robotix",
-		"steam": "robotix31337"
-	}]);
+	Trucker.find({}, function(err, results) {
+		return res.send(results);
+	});
 };
 exports.findById = function() {};
 exports.add = function() {};
