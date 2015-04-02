@@ -15,7 +15,7 @@ exports.findById = function(req, res) {
 };
 
 exports.add = function(req, res) {
-	Trucker.create(req.body, function (err, trucker) {
+	Trucker.create(Hjson.parse(req.body), function (err, trucker) {
 		console.log(req.body);
 		if (err) return console.log(err);
 		return res.send(trucker);
