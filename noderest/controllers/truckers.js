@@ -6,15 +6,20 @@ exports.findAll = function(req, res) {
 		return res.send(results);
 	});
 };
-exports.findById = function() {};
+exports.findById = function(req, res) {
+	var id = req.params.id;
+	Trucker.findOne({'_id':id}, function(err, result) {
+		return res.send(result)
+	});
+};
 exports.add = function() {};
 exports.update = function() {};
 exports.delete = function() {};
 exports.import = function(req, res){
 	Trucker.create(
-		{ "id": "1", "Name": "Robotix", "steamID": "robotix31337" },
-		{ "id": "2", "Name": "RJ31337", "steamID": "revdave31337" },
-		{ "id": "3", "Name": "Astr0neo", "steamID": "Astr0neogaming"}
+		{ "id": "1", "name": "Robotix", "steamid": "robotix31337" },
+		{ "id": "2", "name": "RJ31337", "steamid": "revdave31337" },
+		{ "id": "3", "name": "Astr0neo", "steamid": "Astr0neogaming"}
 		, function (err) {
 			if (err) return console.log(err);
 			return res.send(202);
