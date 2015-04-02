@@ -1,9 +1,12 @@
 {
-	"name": "noderest",
-	"description": "Listener service for TurboTrack",
-	"version": "1.0.0",
-	"private": "true",
-	"dependencies": {
-		"express": "3.x"
-	}
+  "name": "noderest",
+  "description": "Listener service for TurboTrack",
+  "version": "1.0.0",
+  "private": "true",
+  "dependencies": {
+    "express": "3.x"
+  },
+  "devDependencies": {
+    "mongoose": "~4.0.1"
+  }
 }
