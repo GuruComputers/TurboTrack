@@ -13,7 +13,17 @@ exports.findById = function(req, res) {
 	});
 };
 exports.add = function() {};
-exports.update = function() {};
+exports.update = function(req, res) {
+	var id = req.params.id;
+	var updates = req.body;
+
+	Trucker.update({"_id":id}, req.body,
+		function (err, numberAffected) {
+			if (err) return console.log(err);
+			console.log('Updated %d truckers', numberAffected);
+			return res.send(202);
+		});
+};
 exports.delete = function() {};
 exports.import = function(req, res){
 	Trucker.create(
