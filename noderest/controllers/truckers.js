@@ -12,7 +12,12 @@ exports.findById = function(req, res) {
 		return res.send(result)
 	});
 };
-exports.add = function() {};
+exports.add = function(req, res) {
+	Trucker.create(req.body, function (err, trucker) {
+		if (err) return console.log(err);
+		return res.send(trucker);
+	});
+};
 exports.update = function(req, res) {
 	var id = req.params.id;
 	var updates = req.body;
