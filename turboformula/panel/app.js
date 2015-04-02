@@ -16,10 +16,12 @@ var stormpathMiddleware = stormpath.init(app, {
 
 app.use(stormpathMiddleware);
 
-app.get('/', function(req res) {
+app.get('/', function(req, res) {
 	res.render('home', {
 		title: 'Welcome'
 	});
 });
+
+app.use('/profile', require('./profile')());
 
 app.listen(3000);
