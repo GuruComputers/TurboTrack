@@ -7,4 +7,4 @@ var TruckerSchema = new Schema({
 	steamid: String
 });
 
-mongoose.model('Truker', TruckerSchema);
+mongoose.model('Trucker', TruckerSchema);

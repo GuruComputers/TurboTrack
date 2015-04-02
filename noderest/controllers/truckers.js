@@ -10,3 +10,13 @@ exports.findById = function() {};
 exports.add = function() {};
 exports.update = function() {};
 exports.delete = function() {};
+exports.import = function(req, res){
+	Trucker.create(
+		{ "id": "1", "Name": "Robotix", "steamID": "robotix31337" },
+		{ "id": "2", "Name": "RJ31337", "steamID": "revdave31337" },
+		{ "id": "3", "Name": "Astr0neo", "steamID": "Astr0neogaming"}
+		, function (err) {
+			if (err) return console.log(err);
+			return res.send(202);
+		});
+};
