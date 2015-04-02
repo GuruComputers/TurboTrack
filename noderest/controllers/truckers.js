@@ -1,4 +1,5 @@
 var mongoose = require('mongoose'),
+fs = require('fs'),
 Trucker = mongoose.model('Trucker');
 
 exports.findAll = function(req, res) {
@@ -16,7 +17,11 @@ exports.findById = function(req, res) {
 
 exports.add = function(req, res) {
 	Trucker.create(req.body, function (err, trucker) {
-		console.log(req.body);
+		var stream = fs.createWriteStream("test.txt");
+		stream.once('open', function(fd) {
+			stream.write(JSON.stringify(req.body));
+			stream.end();
+		});
 		if (err) return console.log(err);
 		return res.send(trucker);
 	});
@@ -43,11 +48,10 @@ exports.delete = function(req, res) {
 
 exports.import = function(req, res){
 	Trucker.create(
-		{ "id": "1", "name": "Robotix", "steamid": "robotix31337" },
-		{ "id": "2", "name": "RJ31337", "steamid": "revdave31337" },
-		{ "id": "3", "name": "Astr0neo", "steamid": "Astr0neogaming"}
+		{ "id": "3", "name": "RJ31337", "steamid": "revdave31337" }
 		, function (err) {
 			if (err) return console.log(err);
 			return res.send(202);
+			console.log("Yay!");
 		});
 };
