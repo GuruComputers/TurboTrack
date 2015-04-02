@@ -1,6 +1,7 @@
-var http = require('http');
-http.createServer(function (req, res) {
-	res.writeHead(200, {'Content-Type': 'text/plain'});
-	res.end('Hello World!\n');
-}).listen(1337);
-console.log('Server running at http://hitech4all.co.uk:1337');
+var express = require('express');
+var app = express();
+app.get('/', function(req, res) {
+	res.send('Still Working...\n');
+});
+app.listen(1337);
+console.log('Listening on port 1337');
