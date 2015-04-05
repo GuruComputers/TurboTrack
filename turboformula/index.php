@@ -53,66 +53,44 @@
           <div class="inner cover">
             <link class="cssdeck" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/css/bootstrap.min.css">
             <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/css/bootstrap-responsive.min.css" class="cssdeck">
-            <div class="" id="loginModal">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                <h3>Have an Account?</h3>
-              </div>
-              <div class="modal-body">
-                <div class="well">
-                  <ul class="nav nav-tabs">
-                    <li class="active"><a href="#login" data-toggle="tab">Login</a></li>
-                    <li><a href="#create" data-toggle="tab">Apply</a></li>
-                  </ul>
-                  <div id="myTabContent" class="tab-content">
-                    <div class="tab-pane active in" id="login">
-                      <form class="form-horizontal" action='login.php' method="POST">
-                        <fieldset>
-                          <div id="legend">
-                            <legend class="">Login</legend>
-                          </div>    
-                          <div class="control-group">
-                            <!-- Username -->
-                            <label class="control-label"  for="username">Username</label>
-                            <div class="controls">
-                              <input type="text" id="username" name="username" placeholder="" class="input-xlarge">
-                            </div>
-                          </div>
-                          <div class="control-group">
-                            <!-- Password-->
-                            <label class="control-label" for="password">Password</label>
-                            <div class="controls">
-                              <input type="password" id="password" name="password" placeholder="" class="input-xlarge">
-                            </div>
-                          </div>
-                          <div class="control-group">
-                            <!-- Button -->
-                            <div class="controls">
-                              <button class="btn btn-success">Login</button>
-                            </div>
-                          </div>
-                        </fieldset>
-                      </form>                
-                    </div>
-                  <div class="tab-pane fade" id="create">
-                    <form id="tab">
-                      <label>Name</label>
-                      <input type="text" value="" class="input-xlarge">
-                      <label>Steam ID</label>
-                      <input type="text" value="" class="input-xlarge">
-                      <label>Why do you want to join?</label>
-                      <textarea value="Smith" rows="2" class="input-xlarge">
-                      </textarea>
-                      <div>
-                        <button class="btn btn-primary">Create Account</button>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div>
             <script class="cssdeck" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
             <script class="cssdeck" src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+            <form class="form-horizontal" role="form" method="post" action="index.php">
+              <div class="form-group">
+                <label for="name" class="col-sm-2 control-label">Name</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name" value="">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="email" class="col-sm-2 control-label">Email</label>
+                <div class="col-sm-10">
+                  <input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com" value="">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="message" class="col-sm-2 control-label">Why would you like to join Turbo Formula?</label>
+                <div class="col-sm-10">
+                  <textarea class="form-control" rows="4" name="message"></textarea>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="human" class="col-sm-2 control-label">2 + 3 = ?</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="human" name="human" placeholder="Your Answer">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-10 col-sm-offset-2">
+                  <input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-10 col-sm-offset-2">
+                  <! Will be used to display an alert to the user>
+                </div>
+              </div>
+            </form>
           </div>
 
           <div class="mastfoot">
@@ -136,3 +114,46 @@
     <script src="js/ie10-viewport-bug-workaround.js"></script>
   </body>
 </html>
+
+<?php
+    // PHP Mailer Function
+    if ($_POST["submit"]) {
+        $name = $_POST['name'];
+        $email = $_POST['email'];
+        $message = $_POST['message'];
+        $human = intval($_POST['human']);
+        $from = 'Turbo Formula VTC'; 
+        $to = 'sales@gurucomputers.co.uk'; 
+        $subject = 'Application to join Turbo Formula VTC ';
+        
+        $body = "From: $name\n E-Mail: $email\n Message:\n $message";
+ 
+        // Check if name has been entered
+        if (!$_POST['name']) {
+            $errName = 'Please enter your name';
+        }
+        
+        // Check if email has been entered and is valid
+        if (!$_POST['email'] || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+            $errEmail = 'Please enter a valid email address';
+        }
+        
+        //Check if message has been entered
+        if (!$_POST['message']) {
+            $errMessage = 'Please enter your message';
+        }
+        //Check if simple anti-bot test is correct
+        if ($human !== 5) {
+            $errHuman = 'Your anti-spam is incorrect';
+        }
+ 
+// If there are no errors, send the email
+if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
+    if (mail ($to, $subject, $body, $from)) {
+        $result='<div class="alert alert-success">Thank You! We will be in touch</div>';
+    } else {
+        $result='<div class="alert alert-danger">Sorry there was an error sending your message. Please try again later</div>';
+    }
+}
+    }
+?>
