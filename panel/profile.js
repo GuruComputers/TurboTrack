@@ -12,10 +12,9 @@ var profileForm = forms.create({
     required: true
   }),
   surname: forms.fields.string({ required: true }),
-  streetAddress: forms.fields.string(),
+  SteamID: forms.fields.string(),
   city: forms.fields.string(),
-  state: forms.fields.string(),
-  zip: forms.fields.string()
+  Country: forms.fields.string()
 });
 
 // A render function that will render our form and
@@ -28,10 +27,9 @@ function renderForm(req,res,locals){
     csrfToken: req.csrfToken(),
     givenName: req.user.givenName,
     surname: req.user.surname,
-    streetAddress: req.user.customData.streetAddress,
+    SteamID: req.user.customData.SteamID,
     city: req.user.customData.city,
-    state: req.user.customData.state,
-    zip: req.user.customData.zip
+    Country: req.user.customData.Country
   },locals||{}));
 }
 
@@ -58,10 +56,9 @@ module.exports = function profile(){
         // about and then cal save() on the user object:
         req.user.givenName = form.data.givenName;
         req.user.surname = form.data.surname;
-        req.user.customData.streetAddress = form.data.streetAddress;
+        req.user.customData.SteamID = form.data.SteamID;
         req.user.customData.city = form.data.city;
-        req.user.customData.state = form.data.state;
-        req.user.customData.zip = form.data.zip;
+        req.user.customData.Country = form.data.Country;
         req.user.save(function(err){
           if(err){
             if(err.developerMessage){
