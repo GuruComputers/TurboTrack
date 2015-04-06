@@ -31,6 +31,7 @@ if(!isset($_SESSION['steamid'])) {
 	$query = mysql_query($sql) or die(mysql_error());
 	$row = mysql_fetch_object($query);
 	$rank = htmlspecialchars($row->rank);
+	$turbotrackID = htmlspecialchars($row->turbotrackID);
 
 	include("index.inc.php");
 	}    
