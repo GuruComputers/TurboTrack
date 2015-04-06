@@ -33,7 +33,7 @@
               <ul class="dropdown-menu" role="menu">
                 <li class="dropdown-header">Projects in Progress</li>
                 <li><a href="http://www.elitenation.co.uk" target="_blank">Elite Nation</a></li>
-                <li><a href="#">Euro Truck Simulator 2 MP: TurboTrack</a></li>
+                <li><a href="/panel/">Euro Truck Simulator 2 MP: TurboTrack</a></li>
                 <li class="divider"></li>
               </ul>
             </li>

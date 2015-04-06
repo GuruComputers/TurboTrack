@@ -1,12 +1,12 @@
 <?php
 
 if(basename(__FILE__) == basename($_SERVER['PHP_SELF'])){exit();}
-$page = "home";
+$page = "company";
 include("menu.inc.php");
 
 ?>
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-          <h1 class="page-header"><?php echo $personaname; ?>'s Dashboard</h1>
+          <h1 class="page-header">Company Dashboard</h1>
 
           <div class="row placeholders">
             <div class="col-xs-6 col-sm-3 placeholder">
