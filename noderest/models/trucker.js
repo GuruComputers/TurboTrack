@@ -99,7 +99,17 @@ var TruckerSchema = new Schema({
 	CruiseControlSpeed: Number,
 	TruckMake: String,
 	TruckMakeId: String,
-	TruckModel: String
+	TruckModel: String,
+	LastOdometer: Number,
+	TotalDistance: Number
 });
+
+truckerSchema.methods.TotalDistance = function() {
+	// Create a Company Odometer Value
+	this.LastOdometer = this.TruckOdometer;
+	this.TotalDistance = this.TruckOdometer - this.LastOdometer;
+	
+	return this.TotalDistance;
+};
 
 mongoose.model('Trucker', TruckerSchema);

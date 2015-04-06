@@ -15,12 +15,15 @@ try {
 
   // iterate through the result set
   // print each document
-  echo $cursor->count() . ' trucker(s) found. <br/>';  
-  foreach ($cursor as $obj) {
-    echo 'Name: ' . $obj['name'] . '<br/>';
-    echo 'Mileage: ' . $obj['TruckOdometer'] . '<br/>';
-    echo '<br/>';
-    $mileage = $mileage + $obj['TruckOdometer'];
+  //echo $cursor->count() . ' trucker(s) found. <br/>';  
+   foreach ($cursor as $obj) {
+  //  echo 'Name: ' . $obj['name'] . '<br/>';
+  //  echo 'Mileage: ' . $obj['TruckOdometer'] . '<br/>';
+  //  echo '<br/>';
+    $id = $obj['steamid'];
+    $name = $obj['name'];
+    $mileage = round($obj['TruckOdometer']);
+    $companyMileage = $companyMileage + $obj['TruckOdometer'];
   }
 
   // access database
@@ -37,7 +40,7 @@ try {
   
   // update document with new values
   // save back to collection
-  $doc['TotalDistance'] = $mileage;
+  $doc['TotalDistance'] = $companyMileage;
   $collection2->save($doc);
   
   // disconnect from server
