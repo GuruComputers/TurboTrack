@@ -27,7 +27,6 @@
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About Us</a></li>
             <li><a href="#contact">Contact Us</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Projects <span class="caret"></span></a>
@@ -36,8 +35,6 @@
                 <li><a href="http://www.elitenation.co.uk" target="_blank">Elite Nation</a></li>
                 <li><a href="#">Euro Truck Simulator 2 MP: TurboTrack</a></li>
                 <li class="divider"></li>
-                <li class="dropdown-header">Completed Projects</li>
-                <li><a href="#">None Yet :(</a></li>
               </ul>
             </li>
           </ul>
@@ -99,9 +96,10 @@
   <hr class="featurette-divider">
 
   <div class="featurette">
-    <img class="featurette-image img-circle pull-right" src="http://placehold.it/512">
-    <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Flatness.</span></h2>
-    <p class="lead">A big design trend for 2013 is "flat" design. Gone are the days of excessive gradients and shadows. Designers are producing cleaner flat designs, and Bootstrap 3 takes advantage of this minimalist trend.</p>
+    <img class="featurette-image img-circle pull-right" src="img/logo.png">
+    <h2 class="featurette-heading">Euro Truck Simulator 2: Multiplayer. <br /><span class="text-muted">TurboTrack.</span></h2>
+    <p class="lead">Virtual Trucking Companies in Euro Truck Simulator 2: Multiplayer are all the same. You write down the jobs as you go and fill out forms later online. Here at Turbo Formula, we have taken our VTC to the next level. Our servers track your progress through the Telemetry SDK to provide live data streaming directly to our secure panel. No more forms!</p>
+    <p><a class="btn btn-default pull-right" href="#">Learn More »</a></p>
   </div>
 
   <hr class="featurette-divider">
