@@ -67,20 +67,20 @@
     <div class="col-md-4 text-center">
       <img class="img-circle" src="http://placehold.it/140x140">
       <h2>Neil Wakely</h2>
-      <p>Neil's Bio.</p>
-      <p><a class="btn btn-default" href="#">View details »</a></p>
+      <p>Neil is one of the Coders here at Turbo Formula. He has a wide range of skills from Website Development to Electrical Repair and Beyond.</p>
+      <p><a class="btn btn-default" href="#">Neil's Bio »</a></p>
     </div>
     <div class="col-md-4 text-center">
       <img class="img-circle" src="http://placehold.it/140x140">
       <h2>Dean Wakely</h2>
-      <p>Dean's Bio.</p>
-      <p><a class="btn btn-default" href="#">View details »</a></p>
+      <p>Dean's main role here is the visual side of our group. He has a passion for AI, some would say an obsession. Python is his preferred language.</p>
+      <p><a class="btn btn-default" href="#">Dean's Bio »</a></p>
     </div>
     <div class="col-md-4 text-center">
       <img class="img-circle" src="http://placehold.it/140x140">
       <h2>Dave Wakely</h2>
-      <p>Dave's Bio.</p>
-      <p><a class="btn btn-default" href="#">View details »</a></p>
+      <p>Dave is one of the Coders here at Turbo Formula. He drinks a fair amount of coffee, eats too much cake and loves cars to a worrying degree.</p>
+      <p><a class="btn btn-default" href="#">Dave's Bio »</a></p>
     </div>
   </div><!-- /.row -->
 
@@ -90,9 +90,10 @@
   <hr class="featurette-divider">
 
   <div class="featurette">
-    <img class="featurette-image img-circle pull-left" src="http://placehold.it/512">
-    <h2 class="featurette-heading">Smaller Footprint. <span class="text-muted">Lightweight.</span></h2>
-    <p class="lead">The new Bootstrap 3 promises to be a smaller build. The separate Bootstrap base and responsive.css files have now been merged into one. There is no more fixed grid, only fluid.</p>
+    <img class="featurette-image pull-left" src="img/elitenation-logo.png">
+    <h2 class="featurette-heading">Elite Nation. <span class="text-muted">Sneak Peek.</span></h2>
+    <p class="lead">A Hacking Simulator like no other. Free your inner demons as you venture around the open-world, destoying data and stealing money as you go.</p>
+    <p><a class="btn btn-default pull-right" href="#">Learn More »</a></p>
   </div>
 
   <hr class="featurette-divider">
