@@ -10,96 +10,41 @@
       <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <link href="css/styles.css" rel="stylesheet">
+    <link href="css/colours.css" rel="stylesheet">
   </head>
   <body>
-<div class="navbar-wrapper">
-  <div class="container">
-    <div class="navbar navbar-inverse navbar-static-top">
-      
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
         <div class="navbar-header">
-      <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </a>
-        <a class="navbar-brand" href="#">Turbo Formula</a>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Turbo Formula</a>
         </div>
-        <div class="navbar-collapse collapse">
+        <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li class="active"><a href="#">Home</a></li>
-            <li><a href="http://www.bootply.com" target="ext">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact Us</a></li>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Projects <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li class="dropdown-header">Projects in Progress</li>
+                <li><a href="http://www.elitenation.co.uk" target="_blank">Elite Nation</a></li>
+                <li><a href="#">Euro Truck Simulator 2 MP: TurboTrack</a></li>
                 <li class="divider"></li>
-                <li><a href="#">Separated link</a></li>
-                <li><a href="#">One more separated link</a></li>
+                <li class="dropdown-header">Completed Projects</li>
+                <li><a href="#">None Yet :(</a></li>
               </ul>
             </li>
           </ul>
-        </div>
-
-    </div>
-  </div><!-- /container -->
-</div><!-- /navbar wrapper -->
-
-
-<!-- Carousel
-================================================== -->
-<div id="myCarousel" class="carousel slide">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-  </ol>
-  <div class="carousel-inner">
-    <div class="item active">
-      <img src="/assets/example/bg_suburb.jpg" style="width:100%" class="img-responsive">
-      <div class="container">
-        <div class="carousel-caption">
-          <h1>The Turbo Formula Team</h1>
-          <p></p>
-          <p><a class="btn btn-lg btn-primary" href="about.php">Learn More</a>
-        </p>
-        </div>
+        </div><!--/.nav-collapse -->
       </div>
-    </div>
-    <div class="item">
-      <img src="http://lorempixel.com/2000/600/abstract/1" class="img-responsive">
-      <div class="container">
-        <div class="carousel-caption">
-          <h1>Elite Nation</h1>
-          <p>Brief introduction to Elite Nation Game</p>
-          <p><a class="btn btn-large btn-primary" href="#">Learn more</a></p>
-        </div>
-      </div>
-    </div>
-    <div class="item">
-      <img src="http://placehold.it/1500X500" class="img-responsive">
-      <div class="container">
-        <div class="carousel-caption">
-          <h1>Euro Truck Simulator Multiplayer TurboTrack</h1>
-          <p>Brief introduction to TurboTrack Application</p>
-          <p><a class="btn btn-large btn-primary" href="#">Learn More</a></p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Controls -->
-  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-    <span class="icon-prev"></span>
-  </a>
-  <a class="right carousel-control" href="#myCarousel" data-slide="next">
-    <span class="icon-next"></span>
-  </a>  
-</div>
-<!-- /.carousel -->
-
+    </nav>
+<br /><br />
 
 <!-- Marketing messaging and featurettes
 ================================================== -->
@@ -107,38 +52,40 @@
 
 <div class="container marketing">
 
+  <hr class="featurette-divider">
+
+  <div class="featurette">
+    <img class="featurette-image img-circle pull-right" src="img/logo.png">
+    <h2 class="featurette-heading">Turbo Formula. <br /><span class="text-muted">We'll blow your mind.</span></h2>
+    <p class="lead">We work hard to bring you the smoothest graphics, <br />the gameplay to end all gameplay, and the support to ice off the cake.</p>
+  </div>
+
+  <hr class="featurette-divider">
+
   <!-- Three columns of text below the carousel -->
   <div class="row">
     <div class="col-md-4 text-center">
       <img class="img-circle" src="http://placehold.it/140x140">
-      <h2>Mobile-first</h2>
-      <p>Tablets, phones, laptops. The new 3 promises to be mobile friendly from the start.</p>
+      <h2>Neil Wakely</h2>
+      <p>Neil's Bio.</p>
       <p><a class="btn btn-default" href="#">View details »</a></p>
     </div>
     <div class="col-md-4 text-center">
       <img class="img-circle" src="http://placehold.it/140x140">
-      <h2>One Fluid Grid</h2>
-      <p>There is now just one percentage-based grid for Bootstrap 3. Customize for fixed widths.</p>
+      <h2>Dean Wakely</h2>
+      <p>Dean's Bio.</p>
       <p><a class="btn btn-default" href="#">View details »</a></p>
     </div>
     <div class="col-md-4 text-center">
       <img class="img-circle" src="http://placehold.it/140x140">
-      <h2>LESS is More</h2>
-      <p>Improved support for mixins make the new Bootstrap 3 easier to customize.</p>
+      <h2>Dave Wakely</h2>
+      <p>Dave's Bio.</p>
       <p><a class="btn btn-default" href="#">View details »</a></p>
     </div>
   </div><!-- /.row -->
 
 
   <!-- START THE FEATURETTES -->
-
-  <hr class="featurette-divider">
-
-  <div class="featurette">
-    <img class="featurette-image img-circle pull-right" src="http://placehold.it/512">
-    <h2 class="featurette-heading">Responsive Design. <span class="text-muted">It'll blow your mind.</span></h2>
-    <p class="lead">In simple terms, a responsive web design figures out what resolution of device it's being served on. Flexible grids then size correctly to fit the screen.</p>
-  </div>
 
   <hr class="featurette-divider">
 
@@ -162,10 +109,11 @@
 
 
   <!-- FOOTER -->
-  <footer>
-    <p class="pull-right"><a href="#">Back to top</a></p>
-    <p>This Bootstrap layout is compliments of Bootply. · <a href="http://www.bootply.com/62603">Edit on Bootply.com</a></p>
-  </footer>
+  <footer class="footer">
+      <div class="container">
+        <p class="text-muted">Turbo Formula is a child company of <a href="http://www.gurucomputers.co.uk" target="_blank">Guru Computers Ltd.</p>
+      </div>
+    </footer>
 
 </div><!-- /.container -->
   <!-- script references -->
