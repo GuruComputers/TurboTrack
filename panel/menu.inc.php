@@ -2,6 +2,8 @@
 
 if(basename(__FILE__) == basename($_SERVER['PHP_SELF'])){exit();}
 
+include('mileage.php');
+
 ?>
 
 <!DOCTYPE html>
@@ -103,6 +105,9 @@ if(basename(__FILE__) == basename($_SERVER['PHP_SELF'])){exit();}
               <ul class="list-group list-group-flush">
                   <li class="list-group-item liitem"><strong>Position:</strong>
                       <span class="pull-right"><?php echo $rank; ?></span>
+                  </li>
+                  <li class="list-group-item liitem"><strong>Miles Driven:</strong>
+                      <span class="pull-right"><?php echo $mileage; ?></span>
                   </li>
               </ul>
               <div class="panel-footer">
