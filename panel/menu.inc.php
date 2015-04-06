@@ -75,11 +75,21 @@ if(basename(__FILE__) == basename($_SERVER['PHP_SELF'])){exit();}
             <li><a href="">Damage Reports</a></li>
           </ul>
           <ul class="nav nav-sidebar">
-            <li><a href="">Shop</a></li>
             <li><a href="">Trophies</a></li>
             <li><a href="">Awards</a></li>
             <li><a href='steamauth/logout.php'>Log out</a></li>
           </ul>
+          <?php 
+            if($rank != 'Trucker')
+            {
+              echo '<ul class="nav nav-sidebar">
+            <li><a href="">Approve Jobs</a></li>
+            <li><a href="">Check Accident Reports</a></li>
+            <li><a href="">Warn Player</a></li>
+            <li><a href="">Ban Player</a></li>
+          </ul>';
+            }
+          ?>
           <div class="panel panel-primary">
               <div class="panel-heading">
                   <h4 class="text-center">User Profile<span class="glyphicon glyphicon-user pull-right"></span></h4>
