@@ -58,7 +58,8 @@
   </div>
 
   <hr class="featurette-divider">
-
+  <h1 style="text-align: center;">Meet the Team</h1>
+  <br />
   <!-- Three columns of text below the carousel -->
   <div class="row">
     <div class="col-md-4 text-center">
