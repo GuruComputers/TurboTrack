@@ -54,30 +54,30 @@
   <div class="featurette">
     <img class="featurette-image img-circle pull-right" src="img/logo.png">
     <h2 class="featurette-heading">Turbo Formula. <br /><span class="text-muted">We'll blow your mind.</span></h2>
-    <p class="lead">We work hard to bring you the smoothest graphics, <br />the gameplay to end all gameplay, and the support to ice off the cake.</p>
+    <p class="text-info" style="font-size: 20px">We work hard to bring you the smoothest graphics, <br />the gameplay to end all gameplay, and the support to ice off the cake.</p>
   </div>
 
   <hr class="featurette-divider">
-  <h1 style="text-align: center;">Meet the Team</h1>
+  <h1 class="text-muted" style="text-align: center;">Meet the Team</h1>
   <br />
   <!-- Three columns of text below the carousel -->
   <div class="row">
     <div class="col-md-4 text-center">
-      <img class="img-circle" src="img/neil.jpg">
-      <h2>Neil Wakely</h2>
-      <p>Neil is one of the Coders here at Turbo Formula. He has a wide range of skills from Website Development to Electrical Repair and Beyond.</p>
+      <img class="img-circle" src="img/neil.png">
+      <h2 class="text-muted">Neil Wakely</h2>
+      <p class="text-info" style="font-size: 20px">Neil is one of the Coders here at Turbo Formula. He has a wide range of skills from Website Development to Electrical Repair and Beyond.</p>
       <p><a class="btn btn-default" href="#">Neil's Bio »</a></p>
     </div>
     <div class="col-md-4 text-center">
-      <img class="img-circle" src="http://placehold.it/140x140">
-      <h2>Dean Wakely</h2>
-      <p>Dean's main role here is the visual side of our group. He has a passion for AI, some would say an obsession. Python is his preferred language.</p>
+      <img class="img-circle" src="img/dean.png">
+      <h2 class="text-muted">Dean Wakely</h2>
+      <p class="text-info" style="font-size: 20px">Dean's main role here is the visual side of our group. He has a passion for AI, some would say an obsession. Python is his preferred language.</p>
       <p><a class="btn btn-default" href="#">Dean's Bio »</a></p>
     </div>
     <div class="col-md-4 text-center">
-      <img class="img-circle" src="img/dave.jpg">
-      <h2>Dave Wakely</h2>
-      <p>Dave is one of the Coders here at Turbo Formula. He drinks a fair amount of coffee, eats too much cake and loves cars to a worrying degree.</p>
+      <img class="img-circle" src="img/dave.png">
+      <h2 class="text-muted">Dave Wakely</h2>
+      <p class="text-info" style="font-size: 20px">Dave is one of the Coders here at Turbo Formula. He drinks a fair amount of coffee, eats too much cake and loves cars to a worrying degree.</p>
       <p><a class="btn btn-default" href="#">Dave's Bio »</a></p>
     </div>
   </div><!-- /.row -->
@@ -90,7 +90,7 @@
   <div class="featurette">
     <img class="featurette-image pull-left" src="img/elitenation-logo.png">
     <h2 class="featurette-heading">Elite Nation. <span class="text-muted">Sneak Peek.</span></h2>
-    <p class="lead">A Hacking Simulator like no other. Free your inner demons as you venture around the open-world, destoying data and stealing money as you go.</p>
+    <p class="text-info" style="font-size: 26px">A Hacking Simulator like no other. Free your inner demons as you venture around the open-world, destoying data and stealing money as you go.</p>
     <p><a class="btn btn-default pull-right" href="#">Learn More »</a></p>
   </div>
 
@@ -99,7 +99,7 @@
   <div class="featurette">
     <img class="featurette-image img-circle pull-right" src="img/logo.png">
     <h2 class="featurette-heading">Euro Truck Simulator 2: Multiplayer. <br /><span class="text-muted">TurboTrack.</span></h2>
-    <p class="lead">Virtual Trucking Companies in Euro Truck Simulator 2: Multiplayer are all the same. You write down the jobs as you go and fill out forms later online. Here at Turbo Formula, we have taken our VTC to the next level. Our servers track your progress through the Telemetry SDK to provide live data streaming directly to our secure panel. No more forms!</p>
+    <p class="text-info" style="font-size: 26px">Virtual Trucking Companies in Euro Truck Simulator 2: Multiplayer are all the same. You write down the jobs as you go and fill out forms later online. Here at Turbo Formula, we have taken our VTC to the next level. Our servers track your progress through the Telemetry SDK to provide live data streaming directly to our secure panel. No more forms!</p>
     <p><a class="btn btn-default pull-right" href="#">Learn More »</a></p>
   </div>
 
