@@ -75,7 +75,7 @@
       <p><a class="btn btn-default" href="#">Dean's Bio »</a></p>
     </div>
     <div class="col-md-4 text-center">
-      <img class="img-circle" src="http://placehold.it/140x140">
+      <img class="img-circle" src="img/dave.jpg">
       <h2>Dave Wakely</h2>
       <p>Dave is one of the Coders here at Turbo Formula. He drinks a fair amount of coffee, eats too much cake and loves cars to a worrying degree.</p>
       <p><a class="btn btn-default" href="#">Dave's Bio »</a></p>
