@@ -63,7 +63,7 @@
   <!-- Three columns of text below the carousel -->
   <div class="row">
     <div class="col-md-4 text-center">
-      <img class="img-circle" src="http://placehold.it/140x140">
+      <img class="img-circle" src="img/neil.jpg">
       <h2>Neil Wakely</h2>
       <p>Neil is one of the Coders here at Turbo Formula. He has a wide range of skills from Website Development to Electrical Repair and Beyond.</p>
       <p><a class="btn btn-default" href="#">Neil's Bio »</a></p>
