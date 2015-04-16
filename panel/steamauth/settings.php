@@ -1,6 +1,6 @@
 <?php
-$steamauth['apikey'] = "557C9FD4DA3DBAB06A187F36BDACBB9A"; // Your Steam WebAPI-Key found at http://steamcommunity.com/dev/apikey
-$steamauth['domainname'] = "turbo-formula.tk"; // The main URL of your website displayed in the login page
+$steamauth['apikey'] = "704C35103DC1E6C4C98CB66237FC900B"; // Your Steam WebAPI-Key found at http://steamcommunity.com/dev/apikey
+$steamauth['domainname'] = "turboformula.co.uk"; // The main URL of your website displayed in the login page
 $steamauth['buttonstyle'] = ""; // Style of the login button [small|large_no|large]
 $steamauth['logoutpage'] = "../"; // Page to redirect to after a successfull logout (from the directory the SteamAuth-folder is located in) - NO slash at the beginning!
 $steamauth['loginpage'] = "index.php"; // Page to redirect to after a successfull login (from the directory the SteamAuth-folder is located in) - NO slash at the beginning!
